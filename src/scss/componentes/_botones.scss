@@ -1,0 +1,19 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.boton {
+  @include m.boton(v.$azul, v.$blanco);
+  border-radius: 1rem;
+  &.reserva {
+    margin: 3rem 0 0 0;
+  }
+}
+
+.boton-eliminar {
+  @include m.boton(v.$azul, v.$blanco);
+  border-radius: 1rem;
+  &:hover {
+    background-color: v.$rojo;
+    color: v.$blanco;
+  }
+}

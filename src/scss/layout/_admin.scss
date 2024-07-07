@@ -1,0 +1,58 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.citas {
+  list-style: none;
+  padding: 0;
+
+  p {
+    font-weight: v.$bold;
+    color: v.$azul;
+  }
+  span,
+  .servicio {
+    font-weight: v.$regular;
+    color: v.$blanco;
+  }
+  li {
+    padding: 1rem;
+    border-top: 1px solid v.$gris;
+    transition: transform 300ms ease-in-out;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+  }
+}
+.acciones-citas {
+  .formulario {
+    margin: 0;
+  }
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .boton,
+  .boton-eliminar {
+    margin: 1rem;
+  }
+}
+
+.servicios {
+  @extend .citas;
+
+  .acciones {
+    @include m.tablet {
+      margin: 0;
+      .boton,
+      .boton-eliminar {
+        margin: 0;
+      }
+    }
+    .boton,
+    .boton-eliminar {
+      margin: 1rem;
+    }
+  }
+}

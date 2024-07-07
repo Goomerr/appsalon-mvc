@@ -1,0 +1,1 @@
+function iniciarApp(){const n=document.querySelector("#fecha");n.addEventListener("input",(function(){const e=n.value;window.location=`?fecha=${e}`}))}document.addEventListener("DOMContentLoaded",(function(){iniciarApp()}));
