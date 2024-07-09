@@ -5,7 +5,6 @@ namespace Controllers;
 use Model\Cita;
 use Model\CitaServicio;
 use Model\Servicios;
-use MVC\Router;
 
 class ApiController
 {
