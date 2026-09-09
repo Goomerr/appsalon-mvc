@@ -18,7 +18,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
     "sass": "^1.75.0",
-    "sharp": "^0.33.3"
+    "sharp": "^0.35.4"
   },
   "dependencies": {
     "git": "^0.1.5"
